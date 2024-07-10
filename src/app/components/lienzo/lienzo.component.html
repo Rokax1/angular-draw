@@ -1,0 +1,16 @@
+<div class="container-paint">
+    <h1>Nuevo pinturillo en construcción</h1>
+
+    <div>
+        <canvas
+        #canvas
+        [width]="canvasWidth"
+        [height]="canvasHeight"
+        (mousedown)="startDrawin($event,selectedColor,penThickness)"
+        (mousemove)="draw($event)"
+        (mouseup)="enDrawing()"
+        >
+
+        </canvas>
+    </div>
+</div>
